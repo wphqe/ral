@@ -1,0 +1,42 @@
+(run){
+  # general settings
+  EVENT_OUTPUT=HepMC_GenEvent[hplus_s]
+  EVENTS 40000;
+
+  # me generator setup
+  ME_SIGNAL_GENERATOR Comix;
+  SCALES VAR{Abs2(p[0]+p[1])};
+  
+  # model setup
+  
+  # Try to make tau deays!!
+  STABLE[15]=0
+  WIDTH[15]=2.26735e-12
+
+ 
+  # Five lines added to switch off decays.
+  SHOWER_GENERATOR=None
+  FRAGMENTATION=Off
+  MI_HANDLER=None
+   ME_QED=Off
+   BEAM_REMNANTS=0
+
+  # LHC beam setup:
+  BEAM_1 2212; BEAM_ENERGY_1 6500;
+  BEAM_2 2212; BEAM_ENERGY_2 6500;
+}(run)
+
+(processes){
+  Process 94 94 -> 5 -5 22 ;
+  Order (*,3);
+  Print_Graphs Graphs;
+End process;
+
+
+}(processes)
+
+(selector){
+	Mass 5 -5 66 E_CMS
+	PT 22 200 E_CMS
+}(selector)
+
