@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="theme-color" content="#f5f5dc">
+    <meta name="description" content="death.">
+    <meta name="author" content="Väinö">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ουδενοιδα</title>
+    <link rel='icon' href='media/anarchy.png'>
+    <style>
+      body {
+        background-color: #F6E7C8, #fff8e7;
+        color: black;
+        font-family: 'Alegreya', "Times New Roman", Serif;
+      }
+      span{
+        cursor: pointer;
+      }  
+      .right {
+        /*top: 500px;*/
+        position: absolute;
+        right: 20px;
+        padding: 10px;
+      } 
+      /*table, th, td {
+    	border: 1px solid black;
+        border-collapse: collapse;
+	  }*/
+      td {
+        padding: 15px;
+      }  
+      .table img {
+        cursor: pointer;
+      }  
+      #droogs img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+      }      
+      .button {
+          font-family: "Alegreya", "Times New Roman", Serif;
+          font-size: 15px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 6px 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      .button:hover {
+          background-color: #45a049;
+          /*border: .5px solid grey;*/
+      }
+      #notes span {
+        border: 1px solid black;
+        background-color: white;
+        padding: 5px;
+      } 
+	#compimg {
+		width: 80%;
+		height: auto;
+	}
+      footer {
+        color: #574B3A;
+        background-color: #AF9778;
+        padding: 20px;
+      }  
+      figure {
+        display: block;
+      }  
+      #contact a {
+        text-decoration: none;
+        color: green;
+      }  
+      #contact a:hover {
+        text-decoration: underline;
+      }  
+      #tracker{
+        padding: 40px;
+      }  
+      abbr i {
+        font-size: 20px;
+        font-family: sans-serif;
+        text-decoration: none;
+      }  
+      abbr {
+        text-decoration: none;
+      }  
+      
+      #druides {
+        font-size: 2px;
+      }  
+      
+      #druides:active{
+        font-size: 70px;
+      }  
+    </style>
+  </head>
+  <body style='background-color: #F6E7C8; border: 10px solid #228b22; padding: 20px;'>
+    <!--<div style='background-color: #228B22; color: #228b22'> <p>d</p>
+    </div>-->
+    <h1>Death & Drugs</h1>
+    
+    <div class='right' style="width:20%">
+  	  <img src='media/anprimetc.gif' width=100%>
+    </div>
+    
+    <audio controls id='chac' style='display:none'>
+      <source src='media/chaconne.mp3' type='audio/mpeg'>
+    </audio> 
+    
+    <br><br>
+    
+    <center><abbr title="σεμνοτητ'εχει σκοτος"><a href="http://churchofeuthanasia.org/"><img src="http://churchofeuthanasia.org/graphics/ranstick.cgi" width=30% alt="The Church of Euthanasia"></a></abbr></center>
+    
+    <br><br>
+    
+    <p><span id='hk' onClick="confirm('Haluatko kuolla?')"><abbr title='summum nec metuas diem nec optes'>ουκαποθανεινθελω</abbr></span></p>
+    
+    <br><br>
+    
+    <center>
+      <abbr title='Euripides, Alcestis: line 295'><i>κἀγώ τ᾽ἂν ἔζων καὶ σὺ τὸν λοιπὸν χρόνον</i></abbr>
+    </center>
+    
+    <br><br>
+
+    <table id='droogs' style="width:100%" class='table'>
+    	<tr>
+          <td>
+            <img src='media/Theobromine.png' width=100% onclick='doplay(ussr, ussrpause)'>
+            <button id='ussrpause' type='button' onclick='dopause(ussr, ussrpause)' class='button'>Pause</button>
+            <audio controls id='ussr'>
+              <source src='media/sovietanthem.mp3' type='audio/mpeg'>
+            </audio>
+          </td>
+          <td>
+	          <img src='media/Tryptophan.png' width=80% onclick='doplay(march, marpause)'>
+    	      <button id='marpause' type='button' onclick='dopause(march, marpause)' class='button'>Pause</button>
+        	  <audio id='march'>
+            	<source src='media/marcha_funebre.mp3' type='audio/mpeg'>
+         	 </audio>
+          </td>
+		</tr>
+		<tr>
+			<td>
+              <img src='media/Phenethylamine.png' onclick='doplay(fant, fantpause)' width=100%>
+              <button id='fantpause' type='button' onclick='dopause(fant, fantpause)' class='button'>Pause</button>
+              <audio controls id='fant'>
+                <source src='media/FantaisieImpromptu.mp3' type='audio/mpeg'>
+              </audio>              
+			</td>
+    		<td>
+              <img src='media/morphine.svg' width=70% onclick='doplay(bal, balpause)'>
+              <button id='balpause' type='button' onclick='dopause(bal, balpause)' class='button'>Pause</button>
+              <audio id='bal'>
+                <source src='media/ballade1.mp3' type='audio/mpeg'>
+              </audio>
+          </td>
+		</tr>
+      	<tr>
+          <td>
+            <img src='media/Phenylalanine.png' onclick='doplay(e812, e812pause)' width=100%>
+            <button id='e812pause' type='button' onclick='dopause(e812, e812pause)' class='button'>Pause</button>
+            <audio id='e812'>
+              <source src='media/1812.mp3' type='audio/mpeg'>
+            </audio>
+          </td>
+          <td>
+            <center><img src='media/water.png' onclick='doplay(fin, finpause, "dhmo")' onclick='dhmoshow()' width=70%></center>
+            <button id='finpause' type='button' onclick='dopause(fin, finpause);/*f();*/' class='button'>Pause</button>
+            <audio id='fin'>
+              <source src='media/finlandia.mp3' type='audio/mpeg'>
+            </audio>
+            <br><p id='dhmo'>Liked that? I wouldn't be so sure: <a href="http://www.dhmo.org/">www.dhmo.org</a></p>
+          </td>
+        </tr>
+    </table>
+    
+    <br><br><br><br><br>
+    
+    <div id='notes'>
+      <span onmouseover='staro(233.08)' onmouseout='stopo()'>Bb3</span>
+      <span onmouseover='staro(261.63)' onmouseout='stopo()'>C4</span>
+      <span onmouseover='staro(277.18)' onmouseout='stopo()' onclick='staro(293.66)'>Db4</span>
+      <span onmouseover='staro(311.13)' onmouseout='stopo()'>Eb4</span>
+      <span onmouseover='staro(349.23)' onmouseout='stopo()'>F4</span>
+      <span onmouseover='staro(369.99)' onmouseout='stopo()' onclick='staro(392)'>Gb4</span>
+      <span onmouseover='staro(440.00)' onmouseout='stopo()'>A4</span>
+      <span onmouseover='staro(466.16)' onmouseout='stopo()'>Bb4</span>
+    </div> 
+    
+    <br>
+    
+    <p style='color: #fff8e7'><i>Cosmic Latte</i></p>
+    <h1 id='druides'>INTERCURSANTIBUS FEMINIS; QUAE IN MODUM FURIARUM VESTE FERALI, CRINIBUS DEIECTIS FACES PRAEFEREBANT; DRUIDES CIRCUM, PRECES DIRAS SUBLATIS AD CAELUM MANIBUS FUNDENTES</h1>
+    <p style='color: beige'>Beige</p>
+    
+    <br>
+    <hr>
+    <div id='comp'>
+	    <h2>Competition!</h2>
+	    <p>βουλη σφ'εν ορεσι συγκαθημενας ιδειν;</p>
+	    <p>Vai joo, tee tämä:</p>
+	    <img src='media/tbg.jpg' alt='Hupsis; contact me (see below)' width=window.innerWidth*0.8 id='compimg'>
+    </div>
+	<br>
+	<hr>
+	<br>
+    <footer>
+      <table style="width:100%">
+        <tr>
+          <td>
+            <div id='contact' class='container'>
+              <h4 style='text-align: center'>-- Contact --</h4>
+              <p>You may wish to send me a message to tell me by just how much this site could be improved. Here is my address presented as a .jpg file, in an attempt to foil the evil spam-spiders. You'll have to type it out again, I'm afraid.</p>
+              <figure>
+                <center><img src='media/email.jpg' alt="Oh dear. It appears that the image has not loaded, which means you can't email me. Mikä häpeä!" height=60px/></center>
+              </figure>
+              <!--<a href="mailto:contact@possh.pw?Subject=Feedback%20for%20site." target="_top">Contact the developer</a> to give feedback and advice.-->
+            </div>  
+          </td>
+          <td>
+            <div id='tracker'>
+            	<a href="https://clustrmaps.com/site/1afjj"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=Iy-RApnD1Mh-kn4hoLHqOqktxyeYzNMC3L_Deprz_Oo&cl=ffffff" /></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    
+    <!--- HELLO -->
+    
+    <script>
+	    // no, I'm not using jQuery
+    var context, opi;
+      window.onload = function(){
+	document.addEventListener("mousedown", openingMusic);
+	context = new AudioContext();
+	opi = context.createOscillator();
+      }
+      function openingMusic(evt){
+	      $('chac').play();
+	      context.resume();
+	      console.log("Thank you for clicking. Clicking is an inherently good and useful thing to do, so much so that you should go and tell others to click. Cela vaut mieux ainsi.");
+	      document.removeEventListener("mousedown",openingMusic);
+      }
+      function dopause(aud, butt) {
+        aud.pause();
+        butt.style.visibility = 'hidden';
+      }  
+      
+      function doplay(aud, butt, txt) {
+        aud.play();
+        butt.style.visibility = 'visible';
+        $(txt).style.visibility = 'visible';
+      }  
+      
+      var bal = $('bal');
+      var balpause = $('balpause');
+      balpause.style.visibility = 'hidden';
+      bal.controls = false;
+      
+      var fant = $('fant');
+      var fantpause = $('fantpause');
+      fantpause.style.visibility = 'hidden';
+      fant.controls = false; 
+      
+      var ussr = $('ussr');
+      var ussrpause = $('ussrpause');
+      ussrpause.style.visibility = 'hidden';
+      ussr.controls = false;
+      
+      var march = $('march');
+      var marpause = $('marpause');
+      marpause.style.visibility = 'hidden';
+      
+      var e812 = $('e812');
+      var e812pause = $('e812pause');
+      e812pause.style.visibility = 'hidden';
+      e812.controls = false;
+      
+      var fin = $('fin');
+      var finpause = $('finpause');
+      finpause.style.visibility = 'hidden';
+      fin.controls = false;
+      
+	function $(id){
+		return document.getElementById(id);
+	}	
+	    
+      $('dhmo').style.visibility = 'hidden';
+      var fi=0;
+      var ng = false;
+	/*function f(){
+		fi++;
+		if(fi>=Math.floor(Math.PI*(14%3))){
+		   if(ng){fi = 0;ng = false;return;}
+		   ng = true;
+		   getElementById('hk').addEventListener('click',function(){
+		   	
+		   });
+		}
+	}*/
+
+      function staro(frequency){
+        opi.type = 'sine';
+        opi.frequency.value = frequency;        
+        opi.connect(context.destination);
+        opi.start();
+      }
+      function stopo(){
+        opi.disconnect();
+      }  
+    </script>  
+  </body>
+</html>  
